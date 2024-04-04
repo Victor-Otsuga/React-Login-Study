@@ -9,11 +9,12 @@ import Login from './routes/Login.jsx'
 function App() {
   const [token, setToken] = useState();
   if(!token) {
-    return <Login setToken={setToken} />
+    return <Login />
   }
   return (
     <>
       <Nav/>
+      <Main/>
       <Footer/>
     </>
   )
